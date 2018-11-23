@@ -58,6 +58,10 @@ class ProjectGenerator {
     return await this.copyToProjectDir('.baseline');
   }
 
+  async addStaticAssets() {
+    return await this.copyToProjectDir('static')
+  }
+
   async addRootApplication() {
     const packageDir = this.group.replace(/\./g, '/')
     const appFile = await this.renderTemplate('App.java.tmpl', {group: this.group})
@@ -73,6 +77,7 @@ class ProjectGenerator {
       await this.addGitignore()
       await this.addGradleScripts()
       await this.addStaticAnalysisScripts()
+      await this.addStaticAssets()
       await this.addRootApplication()
 
       this.cmd.log(chalk.green(outdent`

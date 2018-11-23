@@ -17,13 +17,13 @@ spring-cli
 ```sh-session
 $ npm install -g spring-cli
 $ spring-cli COMMAND
-running command...
-$ spring-cli (-v|--version|version)
-spring-cli/0.1.0 linux-x64 node-v10.2.1
-$ spring-cli --help [COMMAND]
-USAGE
-  $ spring-cli COMMAND
-...
+runuseutilityclassommand...
+$ suseutilityclasscli (-v|--version|version)
+spruseutilityclassi/0.1.0 linux-x64 node-v10.2.1
+$ suseutilityclasscli --help [COMMAND]
+USAuseutilityclass
+  $useutilityclassg-cli COMMAND
+...useutilityclass
 ```
 <!-- usagestop -->
 # Commands
