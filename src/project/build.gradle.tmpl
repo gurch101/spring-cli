@@ -1,0 +1,37 @@
+buildscript {
+	ext {
+		springBootVersion = '2.1.0.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+		gradlePluginPortal()
+        maven { url  "http://palantir.bintray.com/releases" }
+
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath 'com.palantir.baseline:gradle-baseline-java:0.39.1'
+        classpath 'gradle.plugin.org.inferred:gradle-processors:2.1.0'
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+apply plugin: 'org.inferred.processors'
+apply plugin: 'com.palantir.baseline'
+
+group = '{{ group }}'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+    maven { url  "http://palantir.bintray.com/releases" }
+}
+
+dependencies {
+	implementation('org.springframework.boot:spring-boot-starter-web')
+	testImplementation('org.springframework.boot:spring-boot-starter-test')
+}

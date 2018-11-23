@@ -1,0 +1,1 @@
+{"version":"0.1.0","commands":{"createproject":{"id":"createproject","description":"Create a new Spring Boot project","pluginName":"spring-cli","pluginType":"core","aliases":[],"flags":{},"args":[]},"runserver":{"id":"runserver","description":"Runs the Spring Boot application","pluginName":"spring-cli","pluginType":"core","aliases":[],"flags":{},"args":[]}}}
